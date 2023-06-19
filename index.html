@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel Art Generator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <img src="12.png">
+    <div class="container">
+        <h1>Pixel</h1>
+
+        <div>
+            <label for="imageUpload">Wybierz obraz:<br></label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+
+        <div>
+            <label for="pixelSize">Rozmiar piksela:<br></label>
+            <input type="number" id="pixelSize" min="1" value="10">
+        </div>
+
+        <div>
+            <label for="colorPalette">Paleta kolorów:<br></label>
+            <select id="colorPalette">
+                <option value="bw">Czarno-biała</option>
+                <option value="rgb">RGB</option>
+                <option value="grayscale">Skala szarości</option>
+                <option value="sepia">Sepia</option>
+                <option value="invert">Odwrócone kolory</option>
+                <option value="red">Czerwony</option>
+                <option value="green">Zielony</option>
+                <option value="blue">Niebieski</option>
+            </select>
+        </div>
+
+        <canvas id="pixelCanvas"></canvas>
+
+        <button id="saveButton">Zapisz obraz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
